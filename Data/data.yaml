@@ -1,0 +1,40 @@
+#name: "lili" # 冒号必须是英文格式，每个冒号后必须跟空格
+#Name: "nana"
+
+
+#data1:
+#  name: "lili"
+#  pwd: "1234"
+#yaml格式
+#data2:
+#  - "lili"
+#  - "nana"
+
+#python格式
+#data3: ["123","456"]
+
+#json格式
+#data4:
+#  - name: "lili"
+#  - pwd: "1234"
+
+#data8: ~
+#data11: null
+#data12: Null
+
+#data1: 2020-11-11 12:12:12
+#
+#data2: 2020-11-11
+#data3: "12:12:12"
+#data4: 2020-06-02 02:02:02
+
+info: &data
+  name: "lili"
+  phone: "13333333333"
+
+addr:
+  <<: *data
+  detail: "18号"
+
+
+
